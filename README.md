@@ -5,7 +5,7 @@ HTML5/JQuery &amp; Gulp including: unsemantic "sass" (grid only) and other js to
 
 ##Structure
 
-*** In the app folder ***    
+**In the app folder**    
 The index.html file.
 
 **assets folder**:
@@ -13,7 +13,7 @@ It holds and style, data, fonts, images and vendor js
 
 #### 2. Naming conversions & structure guide
 ***
-** Naming files **  
+**Naming files**  
 This is relate to CSS modulariry.  
 Please create modules files and add them to assets>sass>modules. Then call them inside style.scss file.  
 All the extra files (partilas, modules, lib) should start with underscore so they won't be compile as independent files.  
@@ -40,7 +40,7 @@ This seed uses gulp to minify, concatenate, compress images, autoprefix css, tem
 
 You can edit Gulpfile.js to adapt to your needs.
 
-*** How to use it ***
+***How to use it***
 ***
 1. in the terminal cd to your project folder $cd project_folder
 2. $npm install
