@@ -1,0 +1,28 @@
+@import "lib/normalize";
+@import "lib/rem";
+@import "lib/unsemantic-grid-responsive-tablet";
+@import "partials/mixins";
+@import "partials/fonts";
+@import "partials/config";
+
+/** example of modular css **/
+@import "modules/overlay";
+@import "modules/footer";
+
+
+// ----------------------------------------------------
+// 1. GENERAL SETTINGS
+// ----------------------------------------------------
+
+html{ 
+	font-size: 1em;// font-size: 16px;
+}
+
+
+
+
+
+
+
+
+

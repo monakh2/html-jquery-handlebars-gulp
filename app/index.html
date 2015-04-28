@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+  <html lang="en" class="no-js" >
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Project Title</title>
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link href="assets/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <!-- build:css assets/css/style.css -->
+      <link rel="stylesheet" href="assets/css/style.css">
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/lib/html5shiv.js -->
+      <!--[if lt IE 9]> 
+        <script src="assets/js/lib/html5shiv.min.js"></script>
+      <![endif]-->
+    <!-- endbuild -->
+	
+    <!-- build:js assets/js/lib/modernizr.js -->
+  		<script src="assets/js/lib/modernizr.min.js"></script>
+  	<!-- endbuild -->
+
+  </head>
+        
+
+  <body>
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+    <!-- Use the code below if you want to use handlebars. Change the template name and the placeholder to suit your project, and do the same in the main.js.-->
+    <div id="main"></div>
+    <script id="mainTemplate" type="text/x-handlebars-template">
+      {{#each .}}
+          <h1>{{title}}</h1>
+          <p>{{strapline}}</p>
+      {{/each}}
+    </script>
+
+
+    <!-- build:js assets/js/lib/lib-8.js -->
+      <!--[if lt IE 9]> 
+        <script src="assets/js/vendor/respond.min.js"></script>
+        <script src="assets/js/vendor/es5-shim.min.js"></script>
+        <script src="assets/js/vendor/json3.min.js"></script>
+      <![endif]-->
+    <!-- endbuild -->
+	
+	<!-- build:js assets/js/lib/main.js -->
+		  <script src="assets/js/vendor/jquery-1.10.2.min.js"></script>
+      <script src="assets/js/vendor/handlebars-v2.0.0.js"></script>
+		  <script src="assets/js/main.js"></script>
+  <!-- endbuild -->
+  
+  </body>
+</html>

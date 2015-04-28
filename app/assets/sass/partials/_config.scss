@@ -1,0 +1,126 @@
+// ----------------------------------------------------
+// RESET 
+// ----------------------------------------------------
+*, 
+*:before, 
+*:after{
+    margin:0;
+    padding:0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+// ----------------------------------------------------
+// COLOUR DEFINITIONS
+// ----------------------------------------------------
+$primary: #000000;
+$secondary: #999999;
+
+
+
+// ----------------------------------------------------
+// REUSABLE MODULES
+// ----------------------------------------------------
+
+button{
+    background: none;
+    border: none;
+      
+    &:active, &:focus {
+        //outline:none;
+        //outline:0;
+    }
+}
+
+a{
+  &:active, &:focus {
+        //outline:none;
+        //outline:0;
+    }
+}
+
+// Prevent callout "to be used in touch devices"
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+// Dont break hyphenated words
+.hyphenate {
+    display: inline-block;
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+     // Non standard for webkit
+     // word-break: break-word;
+     word-wrap: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+/*** CLEAR FLOAT ***/
+.clearfix:after{
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+%overflow-fix{  overflow: hidden; }
+
+/*** HIDE TEXT ***/
+%clip-hide{
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/*** NAVIGATION ***/
+%nav-list{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    > li{
+        display:block;
+        float:left;
+        &:last-child{
+            margin-right:0px;
+        }
+    }
+}
+
+/*** FONT ICON ***/
+
+[data-icon]:before {
+  content: attr(data-icon);
+  display: inline-block;
+  vertical-align: bottom;
+  @extend %icon-font;
+
+}
+
+[data-icon-after]:after {
+  content: attr(data-icon-after);
+  display: inline-block;
+  vertical-align: bottom;
+  @extend %icon-font;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
