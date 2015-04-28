@@ -4,7 +4,7 @@ HTML5-jQuery-gulp-seed
 HTML5/JQuery &amp; Gulp including: unsemantic "sass" (grid only) and other js to support IE8+
 
 ##Structure
-***
+
 *** In the app folder ***    
 The index.html file.
 
